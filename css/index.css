@@ -93,11 +93,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     z-index: 1;
 }
 .rect,
-.path {
+.path,
+.bathroom-door {
     transition:fill-opacity 500ms ease ;
     -webkit-transition:fill-opacity 500ms ease ;
     -moz-transition:fill-opacity 500ms ease ;
@@ -108,7 +109,8 @@ body {
     fill-opacity: 0.5;
 }
 
-.bathroom:hover {
+.bathroom:hover,
+.bathroom-door:hover {
     opacity: 0.5;
 }
 
