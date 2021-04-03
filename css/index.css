@@ -98,19 +98,25 @@ body {
 }
 .rect,
 .path,
-.bathroom-door {
+.bathroom-door,
+.bedroom {
     transition:fill-opacity 500ms ease ;
     -webkit-transition:fill-opacity 500ms ease ;
     -moz-transition:fill-opacity 500ms ease ;
     -ms-transition:fill-opacity 500ms ease ;
     -o-transition:fill-opacity 500ms ease ;
 }
-.rect:hover {
+.rect:hover{
     fill-opacity: 0.5;
 }
 
 .bathroom:hover,
 .bathroom-door:hover {
+    opacity: 0.5;
+}
+
+.bedroom:hover {
+    fill: #ffff00;
     opacity: 0.5;
 }
 
