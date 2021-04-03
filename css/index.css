@@ -96,16 +96,22 @@ body {
     border: 2px solid red;
     z-index: 1;
 }
-.rect{
+.rect,
+.path {
     transition:fill-opacity 500ms ease ;
     -webkit-transition:fill-opacity 500ms ease ;
     -moz-transition:fill-opacity 500ms ease ;
     -ms-transition:fill-opacity 500ms ease ;
     -o-transition:fill-opacity 500ms ease ;
 }
-.rect:hover{
+.rect:hover {
     fill-opacity: 0.5;
 }
+
+.bathroom:hover {
+    opacity: 0.5;
+}
+
 .img-plan {
     position: absolute;
     top: 50%;
