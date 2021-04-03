@@ -99,7 +99,8 @@ body {
 .rect,
 .path,
 .bathroom-door,
-.bedroom {
+.bedroom,
+.livingroom {
     transition:fill-opacity 500ms ease ;
     -webkit-transition:fill-opacity 500ms ease ;
     -moz-transition:fill-opacity 500ms ease ;
@@ -117,6 +118,10 @@ body {
 
 .bedroom:hover {
     fill: #ffff00;
+    opacity: 0.5;
+}
+.livingroom:hover {
+    fill: #ffa500;
     opacity: 0.5;
 }
 
