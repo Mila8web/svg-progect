@@ -1,0 +1,123 @@
+/* Подключаем шрифты */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(./../assets/fonts/RobotoRegular.ttf);
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url(./../assets/fonts/Montserrat-Bold.ttf);
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/* Общие стили */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "RobotoRegular";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* map */
+.wrapper-map {
+    min-height: 400px;
+    max-width: 100vw;
+}
+
+.part {
+    stroke: white;
+    stroke-width: 76.36;
+    stroke-miterlimit: 22.9256;
+    cursor: pointer;
+    fill: #e5f4ff;
+}
+
+#hrodnenskaia-voblasts:hover {
+    fill: rgb(247, 198, 178);
+}
+
+#vitsebskaia-voblasts:hover {
+    fill: #ffd191;
+}
+
+#mahiliouskaia-voblasts:hover {
+    fill: #ffffbf;
+}
+
+#homelskaia-voblasts:hover {
+    fill: rgb(184, 247, 178);
+}
+
+#minskaia-voblasts:hover {
+    fill: rgb(178, 237, 247);
+}
+
+#brestskaia-voblasts:hover {
+    fill: rgb(178, 188, 247);
+}
+
+#horad-minsk:hover {
+    fill: rgb(241, 178, 247);
+}
+
+.title {
+    font-size: 15px;
+    font-family: "MontserratBold";
+    color: red;
+    border: none;
+}
+
+/* plan */
+.wrapper-plan {
+    min-height: 800px;
+    width: 100vw;
+    background-color:rgb(247, 198, 178);
+    position: relative;
+}
+
+.plan {
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid red;
+    z-index: 1;
+}
+.rect{
+    transition:fill-opacity 500ms ease ;
+    -webkit-transition:fill-opacity 500ms ease ;
+    -moz-transition:fill-opacity 500ms ease ;
+    -ms-transition:fill-opacity 500ms ease ;
+    -o-transition:fill-opacity 500ms ease ;
+}
+.rect:hover{
+    fill-opacity: 0.5;
+}
+.img-plan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    /* height: 700px; */
+}
+
+
+/* diagram */
+.wrapper-diagram {
+    min-height: 500px;
+    max-width: 100vw;
+}
