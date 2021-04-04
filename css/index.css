@@ -82,7 +82,7 @@ body {
 .wrapper-plan {
     min-height: 800px;
     width: 100vw;
-    background-color:rgb(247, 198, 178);
+    background-color: rgb(247, 198, 178);
     position: relative;
 }
 
@@ -92,22 +92,19 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    /* border: 2px solid red; */
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
+
 .rect,
 .path,
 .bathroom-door,
 .bedroom,
 .livingroom {
-    transition:fill-opacity 500ms ease ;
-    -webkit-transition:fill-opacity 500ms ease ;
-    -moz-transition:fill-opacity 500ms ease ;
-    -ms-transition:fill-opacity 500ms ease ;
-    -o-transition:fill-opacity 500ms ease ;
+    transition: fill-opacity 500ms ease;
 }
-.rect:hover{
+
+.rect:hover {
     fill-opacity: 0.5;
 }
 
@@ -120,6 +117,7 @@ body {
     fill: #ffff00;
     opacity: 0.5;
 }
+
 .livingroom:hover {
     fill: #ffa500;
     opacity: 0.5;
@@ -129,7 +127,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 1000px;
     /* height: 700px; */
 }
@@ -139,4 +137,84 @@ body {
 .wrapper-diagram {
     min-height: 800px;
     max-width: 100vw;
+}
+
+.text {
+    font-family: "RobotoRegular";
+    fill: #000;
+    transform: translateY(2px);
+}
+
+.text-top {
+    font-size: 7px;
+    line-height: 1;
+    text-anchor: middle;
+    transform: translateY(-2px);
+
+}
+
+.text-bottom {
+    font-size: 2px;
+    transform: translateY(1px);
+}
+
+figure {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper-diagram,
+.shapes {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-self: center;
+}
+
+.wrapper-diagram svg {
+    height: auto;
+}
+
+.shapes {
+    min-width: calc(8 / 12);
+}
+
+.shapes-list {
+    list-style: none;
+    font-size: 30px;
+}
+
+.shapes-list li {
+    margin: 0 0 20px;
+}
+
+.circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.shape-pink {
+    background-color: #ce4b99;
+}
+
+.shape-green {
+    background-color: #b1c94e;
+}
+
+.shape-blue {
+    background-color: #377bbc;
+}
+
+.description {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

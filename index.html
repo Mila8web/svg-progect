@@ -103,19 +103,45 @@
         <img class="img-plan" src="./assets/images/flat-plan.jpg" alt="plan" />
     </div>
 
-    <div class="wrapper-diagram">
-        <svg width="800" height="800" viewBox="0 0 42 42" class="donut">
-            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4"
-                stroke-width="3"></circle> <!-- grey -->
-            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99"
-                stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle> <!-- pink -->
-            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b1c94e" 
-                stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle> <!-- green -->
-            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#377bbc"
-                stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65"></circle> <!-- blue -->
-        </svg>
-    </div>
+    <figure>
+        <div class="wrapper-diagram">
+            <svg width="800" height="800" viewBox="0 0 42 42" class="donut">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4"
+                    stroke-width="3"></circle> <!-- grey -->
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99"
+                    stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle> <!-- pink -->
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b1c94e"
+                    stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle> <!-- green -->
+                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#377bbc"
+                    stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65"></circle> <!-- blue -->
+                <g class="text">
+                    <text x="50%" y="50%" class="text-top">
+                        Makup
+                    </text>
+                    <text x="40%" y="50%" class="text-bottom">
+                        I KNOW
+                    </text>
+                </g>
+            </svg>
+        </div>
+        <figcaption class="shapes">
+            <p class="description">There are my knowledge about web technologies. My knowledge of HTML is 40%, of CSS is
+                20% and of SVG is 30%.</p>
+            <ul class="shapes-list" aria-hidden="true" role="presentation">
+                <li>
+                    <span class="circle shape-pink"></span> HTML
+                </li>
+                <li>
+                    <span class="circle shape-green"></span> CSS
+                </li>
+                <li>
+                    <span class="circle shape-blue"></span> SVG
+                </li>
+            </ul>
+        </figcaption>
+    </figure>
+
 </body>
 
 </html>
