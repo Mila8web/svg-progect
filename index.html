@@ -79,9 +79,8 @@
             <rect class="rect" x="96" y="37" width="159" height="125" fill-opacity="0" fill="#00bfff"></rect>
             <rect class="rect" x="427" y="246" width="160" height="126" fill-opacity="0" fill="#7fffd4"></rect>
             <rect class="rect" x="96" y="387" width="160" height="107" fill-opacity="0" fill="#ffc0cb"></rect>
-            <g class="bathroom" opacity="0" fill="none" stroke-width="12" 
-                                stroke-miterlimit="10" stroke="#fa8072"
-                                stroke-linejoin="round">
+            <g class="bathroom" opacity="0" fill="none" stroke-width="12" stroke-miterlimit="10" stroke="#fa8072"
+                stroke-linejoin="round">
                 <path transform=translate(60,21) d="M10,10 h226"></path>
                 <path transform=translate(60,160) d="M10,10 h128"></path>
                 <path transform=translate(60,160) d="M186,10 h35"></path>
@@ -89,26 +88,32 @@
                 <path transform=translate(253,2) d="M10,10 v176"></path>
                 <path transform=translate(80,108) d="M10,10 v68"></path>
             </g>
-            <path class="bathroom-door" opacity="0" fill="none" stroke-width="3" 
-                    stroke-miterlimit="10" stroke="#ff00ff"
-                    stroke-linejoin="round"
-                    transform=translate(188,167) 
-                    d="M10,10 v-14 h46 v14 h-46 S 16,56 56,56 v-50"></path>
+            <path class="bathroom-door" opacity="0" fill="none" stroke-width="3" stroke-miterlimit="10" stroke="#ff00ff"
+                stroke-linejoin="round" transform=translate(188,167) d="M10,10 v-14 h46 v14 h-46 S 16,56 56,56 v-50">
+            </path>
 
             <polygon class="bedroom"
-                                points="427,38 585,38 585,163 575,163 575,177 587,177 587,232 427,232 427,142 440,142 440,128 427,128" 
-                                opacity="0" />
+                points="427,38 585,38 585,163 575,163 575,177 587,177 587,232 427,232 427,142 440,142 440,128 427,128"
+                opacity="0" />
             <polygon class="livingroom"
-                                points="270,39 412,39 412,128 400,128 400,142 412,142 412,235 400,235 400,247 412,247 412,371 270,371 270,359 257,359 257,372 142,372 96,372 96,178 258,178 258,189 270,189 270,178 282,178 282,163 270,163" 
-                                opacity="0" />
+                points="270,39 412,39 412,128 400,128 400,142 412,142 412,235 400,235 400,247 412,247 412,371 270,371 270,359 257,359 257,372 142,372 96,372 96,178 258,178 258,189 270,189 270,178 282,178 282,163 270,163"
+                opacity="0" />
         </svg>
 
         <img class="img-plan" src="./assets/images/flat-plan.jpg" alt="plan" />
     </div>
 
     <div class="wrapper-diagram">
-        <svg width="500" height="500" class="diagram">
-            <circle class="diagram-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <svg width="800" height="800" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4"
+                stroke-width="3"></circle> <!-- grey -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99"
+                stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle> <!-- pink -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b1c94e" 
+                stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle> <!-- green -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#377bbc"
+                stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65"></circle> <!-- blue -->
         </svg>
     </div>
 </body>
